@@ -1,11 +1,13 @@
+
 import org.junit.Test;
+
 import static org.mockito.Mockito.*;
 import static org.junit.Assert.assertTrue;
 import java.util.Date;
 
 public class testRentalFrontend {
-	private Customer customer = mock(Customer.class);
-	private ReservationService reservationService = mock(ReservationService.class);
+	private Customer customer = new Customer(18, "Pingui", "0521541512");
+	private ReservationService reservationService = new ReservationService();
 	private Movie movie = mock(Movie.class);
 	private Date date;
 	private RentalFrontend rentalFrontend = new RentalFrontend(reservationService);
