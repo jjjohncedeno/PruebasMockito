@@ -8,13 +8,11 @@ import java.util.Date;
 public class testRentalFrontend {
 	private Customer customer = new Customer(18, "Pingui", "0521541512");
 	private ReservationService reservationService = new ReservationService();
-	private Movie movie = mock(Movie.class);
+	private Movie movie = new Movie("Fiesta de salchichas", "Comedia", "R");
 	private Date date;
 	private RentalFrontend rentalFrontend = new RentalFrontend(reservationService);
 	@Test
 	public void isRentableTest() {
-		when(movie.isRentableTo(customer)).thenReturn(true);
-		when(reservationService.isRentableUntil(movie, date)).thenReturn(true);
 		assertTrue(rentalFrontend.isRentable(movie, customer, date));
 	}
 }
