@@ -7,7 +7,7 @@ public class Customer implements Validation {
 	
 	public Boolean isAdult() {
 		// TODO Auto-generated method stub
-		if (this.edad < 18){
+		if (this.edad <= 18){
 			return false;
 		}else{
 			return true;
