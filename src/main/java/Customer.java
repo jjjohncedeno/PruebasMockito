@@ -22,10 +22,12 @@ public class Customer implements Validation {
 	}
 
 	public void setEdad(int edad) {
+		System.out.println(edad);
 		this.edad = edad;
 	}
 
 	public String getNombre() {
+		System.out.println(edad);
 		return nombre;
 	}
 
