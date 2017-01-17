@@ -28,10 +28,12 @@ public class Customer implements Validation {
 
 	public String getNombre() {
 		System.out.println(edad);
+		System.out.println(edad);
 		return nombre;
 	}
 
 	public void setNombre(String nombre) {
+		System.out.println(edad);
 		this.nombre = nombre;
 	}
 
