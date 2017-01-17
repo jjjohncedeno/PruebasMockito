@@ -3,6 +3,7 @@ public class Movie {
 	private String titulo;
 	private String genero;
 	private String categoria;
+	private String rating;
 	public Movie(String titulo, String genero, String categoria) {
 		super();
 		this.titulo = titulo;
