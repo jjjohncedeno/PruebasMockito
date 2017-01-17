@@ -4,11 +4,16 @@ public class Customer implements Validation {
 	private int edad;
 	private String nombre;
 	private String cedula;
-	
+	private int telefono=0;
 	public Boolean isAdult() {
 		// TODO Auto-generated method stub
 		if (this.edad <= 18){
-			return false;
+			if (this.telefono == 0){
+				return false;	
+			}else{
+				return true;
+			}
+			
 		}else{
 			return true;
 		}
