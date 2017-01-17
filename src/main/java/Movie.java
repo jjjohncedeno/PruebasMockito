@@ -4,6 +4,7 @@ public class Movie {
 	private String genero;
 	private String categoria;
 	private String rating;
+	private String novel;
 	public Movie(String titulo, String genero, String categoria) {
 		super();
 		this.titulo = titulo;
