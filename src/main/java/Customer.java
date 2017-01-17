@@ -40,10 +40,15 @@ public class Customer implements Validation {
 	}
 
 	public String getCedula() {
+		System.out.println(edad);
+		System.out.println(edad);
+		System.out.println(edad);
 		return cedula;
 	}
 
 	public void setCedula(String cedula) {
+		System.out.println(edad);
+		System.out.println(edad);
 		this.cedula = cedula;
 	}
 
