@@ -34,6 +34,8 @@ public class Customer implements Validation {
 
 	public void setNombre(String nombre) {
 		System.out.println(edad);
+		System.out.println(edad);
+		System.out.println(edad);
 		this.nombre = nombre;
 	}
 
