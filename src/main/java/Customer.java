@@ -8,13 +8,16 @@ public class Customer implements Validation {
 	public Boolean isAdult() {
 		// TODO Auto-generated method stub
 		if (this.edad <= 18){
+			System.out.println(edad);
 			return false;
 		}else{
+			System.out.println(edad);
 			return true;
 		}
 	}
 
 	public int getEdad() {
+		System.out.println(edad);
 		return edad;
 	}
 
